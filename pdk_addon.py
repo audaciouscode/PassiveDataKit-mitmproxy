@@ -15,7 +15,6 @@ class PDKListener:
         visit['url'] = flow.request.url
         visit['client_ip'] = flow.client_conn.address[0]
         visit['headers'] = dict(flow.request.headers)
-        visit['headers'] = dict(flow.request.headers)
         visit['date'] = time.time() * 1000
         
         pdk_metadata = {
